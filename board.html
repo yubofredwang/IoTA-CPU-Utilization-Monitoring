@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>AWS </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Galada|Ubuntu:400,500,700" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/helpers/updateBoardHTML.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/iota.min.js"></script>
+    <script type="text/javascript" src="js/board.js?v=1"></script>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <p class="header__title"><span><img class="header__logo" src="images/logo.png" /></span> CPU Temperature Board</p>
+
+        </header>
+
+
+        <section class="leaderboard" >
+                    <button type="button" id="fetchData" class="btn btn-default">Fetch Data</button>
+
+            <table class="table-fill">
+                <thead>
+                    <tr>
+                        <th class="timestamp__title">Timestamp</th>
+                        <th class="cpupercentage__title">CPU Percentage</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard">
+                    <tr>
+                        <td class="iota__timestamp"></td>
+                        <td class="iota__value"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>
